@@ -1,0 +1,45 @@
+<header>
+    <h1>查找提醒</h1>
+    <a class="button icon close" onclick="app.utils.hideModal()"></a>
+</header>
+<br>
+<div>
+    <table  width="100%" style="color: inherit;">
+        <tr>
+		<td>            
+			<label for="stnotify_search_status" style="width: 32%;">状态:</label>
+            <select id="stnotify_search_status" style="width: 60%;" >				
+                <option value="open">打开</option>
+				<option value="closed">关闭</option>
+            </select>
+        </td>
+		</tr>
+		<tr>
+		<td>
+            <label for="stnotify_search_stages" style="width: 32%;">工位:</label>
+            <select id="stnotify_search_stages" style="width: 60%;" >
+            </select>
+        </td>
+		</tr>
+        <tr>
+		<td>
+            <label for="stnotify_search_type" style="width: 32%;">提醒类型:</label>
+            <select id="stnotify_search_type" style="width: 60%;">
+				<option value=""></option>
+                <option value="leader">组长提醒</option>
+                <option value="prod">上下生产提醒</option>
+                <option value="admin_notice">行政通知</option>
+            </select>
+        </td>
+		</tr>
+        <tr>
+		<td>
+            <label for="stnotify_search_author" style="width: 32%;">发出者:</label>
+            <input type='text' id="stnotify_search_author" style="width: 60%;">
+			<label for='stnotify_search_author'><nobr>(用户ID，多个逗号分隔 e.g:1,246,1051)</nobr></label>
+            </select>
+        </td>
+		</tr>
+    </table>
+    <a href="#" class="round_button" style="width:99%" onclick="app.stageNotifyListSearch.doFilterSearch()">查询</a>
+</div>

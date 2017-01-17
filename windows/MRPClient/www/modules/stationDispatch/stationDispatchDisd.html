@@ -1,0 +1,38 @@
+<header>
+    <h1>报废</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.stationDispatchDisd.id, 1)"></a>
+</header>
+<div>
+    <table  width="100%" style="color: inherit;">
+        <tr><td>
+            <label for="sdpd_witem_type" style="width: 32%;">加工对象类型:</label>
+            <select id="sdpd_witem_type" style="width: 60%;" onchange="app.stationDispatchDisd.changeWitemType(this.value)">
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="sdpd_witem" style="width: 32%;">加工对象:</label>
+            <select id="sdpd_witem" style="width: 60%;" >
+            </select>
+        </td></tr>
+        <tr id="sdpd_defect_content"><td>
+            <label for="sdpd_defect" style="width: 32%;">缺陷名称:</label>
+            <select id="sdpd_defect" style="width: 60%;" >
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="sdpd_scrap_wstage" style="width: 32%;">报废工序:</label>
+            <select id="sdpd_scrap_wstage" style="width: 60%;" onchange="app.stationDispatchDisd.changeWstage(this.value)">
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="sdpd_disd_qty" style="width: 32%;">报废数量:</label>
+            <input id="sdpd_disd_qty" type="number" value="0" style="width: 60%;" class="input_style" placeholder="请输入报废数量">
+        </td></tr>
+        <tr><td>
+            <label for="sdpd_note" style="width: 32%;">备注:</label>
+            <textarea id="sdpd_note" rows="2" style="width: 60%;" class="input_style" placeholder="请输入备注信息"></textarea>
+        </td></tr>
+    </table>
+    <a href="#" class="round_button" style="width:99%" onclick="app.stationDispatchDisd.applyDisd()">提交</a>
+</div>

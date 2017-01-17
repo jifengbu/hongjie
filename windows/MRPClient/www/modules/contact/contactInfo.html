@@ -1,0 +1,23 @@
+<header>
+	<h1>个人信息</h1>
+	<a class='backButton button'>返回</a>
+</header>
+<div>
+    <div class="big_user_head default_head contact_info_head" id="cti_head"></div>
+    <div class="contact_info_right_col" style="font-size:1.2em;font-weight: bold" id="cti_name"></div>
+    <div class="contact_info_right_col" id="cti_userid"></div>
+    <div class="contact_info_right_col"><span id="cti_phonenum"></span>
+        <span id="cti_phonenum_ex">
+        <span id="cti_phone" class="icon phone" style="margin-left: 5%" onclick="app.contactInfo.doPhoneCall()"></span>
+        <span id="cti_message" class="icon message" style="margin-left: 5%" onclick="app.contactInfo.doPhoneMessage()"></span>
+        </span>
+    </div>
+    <div class="formGroupHead">个性签名:</div>
+    <textarea id="cti_sign" rows="1"  placeholder="这个家伙很懒，没有签名"  class="input_style" disabled></textarea>
+    <div id="cti_ticket" onclick="app.contactInfo.showPersonalAllTicket()">
+    </div>
+</div>
+<a href="#" class="button green" onclick="app.contactInfo.doMessageChat()" style="width:99%;">发消息</a>
+<a href="#" class="button white" onclick="app.contactInfo.doAudioChat()" style="width:99%;">语音聊天</a>
+<a href="#" class="button white" onclick="app.contactInfo.doVideoChat()" style="width:99%;">视频聊天</a>
+

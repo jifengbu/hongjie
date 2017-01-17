@@ -1,0 +1,20 @@
+<header>
+    <h1>增加提醒</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.stageBoardDetail.id, 1)"></a>
+</header>
+<br>
+<div>
+<label  style="width: 32%;text-align: left">提醒类别:</label>
+<select id="stnotifyaddnew_search_type" style="width: 60%;">
+	<option value="leader">组长提醒</option>
+	<option value="prod">上下生产提醒</option>
+	<option value="admin_notice">行政通知</option>
+</select>
+<label  style="width: 32%;text-align: left" for="stnotifyadd_search_stages">工位:</label>
+<select id="stnotifyaddnew_search_stages" style="width: 60%;" >
+</select>
+<label for="stgnotifyaddnew_content" style="width: 100%;text-align: left">提醒:</label>
+<textarea id="stgnotifyaddnew_content" rows="2" placeholder="content" style="width: 100%;" class="input_style" ></textarea>
+</div>
+<a href="#" class="button green" style="width:99%"onclick="app.stageNotifyAddNew.save()">发布</a>

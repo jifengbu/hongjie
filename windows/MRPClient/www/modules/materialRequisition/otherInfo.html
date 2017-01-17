@@ -1,0 +1,20 @@
+<header>
+    <h1>添加其他选项</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.otherInfo.id, 1)"></a>
+</header>
+<div>
+    <div class="formGroupHead">工艺:</div>
+    <input id="moti_technology"  type="text" placeholder="输入工艺"  class="input_style">
+    <div class="formGroupHead">加工单:</div>
+    <input id="moti_worksheet"  type="text" placeholder="输入加工单"  class="input_style">
+    <div class="formGroupHead">领用工序:</div>
+    <select id="moti_workstage" style="width: 74%;" class="" onchange="app.otherInfo.onWorkstageChange(this);">
+    </select>
+    <input id="moti_workstage_other" type="text" placeholder="输入领用工序" style="display:none;"  class="input_style" oninput="app.otherInfo.onWorkstageOtherChange(this);">
+    <div class="formGroupHead">备注:</div>
+    <textarea id="moti_remark" rows="2"  placeholder="如需输入请输入备注信息" class="input_style"></textarea>
+</div>
+<div class="bottom_fixed_button">
+    <a href="#" class="button green" onclick="app.otherInfo.setOtherInfo()"  style="width:100%;">确定</a>
+</div>

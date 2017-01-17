@@ -1,0 +1,19 @@
+<header>
+	<h1>发送消息给多个人</h1>
+	<a class='backButton button'>返回</a>
+</header>
+<div class="formGroupHead">收信人:</div>
+<span class="icon add" style="float: right" onclick="app.sendMultiMessage.doAddReceivers()"></span>
+<div type='text' id="smm_users" class='af-ui-forms' style="background-color:#EEEEE0; width:90%;line-height: 25px; line-break: loose;border-radius: 10px;">
+    <br>
+    <br>
+</div>
+<footer>
+    <div style="background-color:#ffffff;width:100%;height:100%">
+        <a href="#" class="button" id="smm_more_button" onclick="app.sendMultiMessage.toggleMoreSelect()">+</a>
+        <textarea id="smm_input_textarea" rows="1"  class="message_input" style="display: none;min-height: inherit;max-height: inherit"></textarea>
+        <div id="smm_input_div" class="message_input" contenteditable="true" style="display: none"></div>
+        <a href="#" class="button" id="smm_send_button" onclick="app.sendMultiMessage.sendSimpleMessage()">&gt;</a>
+        <div id="smm_more_panel" class="sgridmenu" style="display: none"></div>
+    </div>
+</footer>

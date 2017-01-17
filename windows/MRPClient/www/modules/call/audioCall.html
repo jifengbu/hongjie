@@ -1,0 +1,15 @@
+<div id="audc_panel">
+	<div id="audc_head" class="audio_call_head default_head"></div>
+	<div class="center_div">
+		<div id="audc_username" style="font-size: 2em; padding-top: 20px; padding-bottom: 20px"></div>
+		<div id="audc_call_state" style="color:red">呼叫中</div>
+		<div id="audc_call_time" style="color:dimgray">00:00:00</div>
+		<div id="audc_callout_button" class="audio_call_button" style="display: none">
+			<a href="#" class="button red" style="width:90%;" onclick="app.audioCall.hangupAudioCall()">挂断</a>
+		</div>
+		<div id="audc_callin_button" class="audio_call_button" style="text-align:center;display: none; width: 100%">
+			<a href="#" class="button green" style="width:45%;" onclick="app.audioCall.answerAudioCall()">接听</a>
+			<a href="#" class="button red" style="width:45%;" onclick="app.audioCall.refuseAudioCall()">挂断</a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+<header>
+<h1>查找派工单</h1>
+<a class="button icon close" onclick="app.utils.hideModal()"></a>
+</header>
+<br>
+<div>
+    <table  width="100%" style="color: inherit;">
+        <tr><td>
+            <label for="stds_search_stages" style="width: 32%;">工位:</label>
+            <select id="stds_search_stages" style="width: 60%;" >
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="stds_search_states" style="width: 32%;">状态:</label>
+            <select id="stds_search_states" style="width: 60%;">
+                <option value="0">上工序完工</option>
+                <option value="1">已接收</option>
+                <option value="2">全部</option>
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="stds_search_filters" style="width: 32%;">过滤条件:</label>
+            <select id="stds_search_filters" style="width: 60%;">
+                <option value="0">无</option>
+                <option value="1">加工对象号</option>
+                <option value="2">派工单号</option>
+                <option value="3">本厂编号</option>
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="stds_search_filter_value" style="width: 32%;">过滤值:</label>
+            <input id="stds_search_filter_value" type="text" style="width: 60%;">
+        </td></tr>
+    </table>
+    <a href="#" class="round_button" style="width:99%" onclick="app.stationDispatchSearch.doFilterSearch()">查询</a>
+</div>

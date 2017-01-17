@@ -1,0 +1,21 @@
+<table  width="100%" style="color: inherit;">
+	<tr><td colspan="2">
+		<div class="formGroupHead">账号:</div>
+		<input type='text' id="login_userid" class='af-ui-forms input_style' placeholder="输入账号">
+	</td></tr>
+	<tr><td colspan="2">
+		<div class="formGroupHead">密码:</div>
+		<input type='password' id="login_password" class='af-ui-forms input_style' placeholder="输入密码"><br />
+	</td></tr>
+	<tr><td>
+		<label style="width: 50%;">记住密码:</label><input id="login_password_record" type="checkbox" value="0" class="toggle"><label for="login_password_record" data-on="是" data-off="否" style="left:55%"><span></span></label>
+	</td><td>
+		<label style="width: 50%;">自动登录:</label><input id="login_auto_login" type="checkbox" value="0" class="toggle"><label for="login_auto_login" data-on="是" data-off="否" style="left:55%"><span></span></label>
+	</td></tr>
+</table>
+<a class="button block green" onclick="app.login.doLogin()">登录</a>
+<div id="login_company_logo"></div>
+<p id="login_company_version_right">
+	<span id="login_company_version" >MRP客户端 v1.0.1</span><br>
+	贵阳宏杰科技有限公司©2014-2016<span id="login_clear_company" onclick="app.login.doCleanupCompany()" style="display: none">清除口令</span>
+</p>

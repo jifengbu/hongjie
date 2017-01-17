@@ -1,0 +1,23 @@
+<div class="video_call_status_container">
+	<div id="vidc_head" class="chat_head video_call_head default_head"></div>
+	<div class="video_call_status">
+		<div id="vidc_username"></div>
+		<div id="vidc_call_state" class="call_state" style="color:red">呼叫中</div>
+		<div id="vidc_call_time" class="call_time">00:00:00</div>
+	</div>
+</div>
+<div id="vidc_small_screen" class="video_small_screen" onclick="app.videoCall.toggleVideoView()">
+</div>
+<div id="vidc_large_screen" class="video_large_screen" onclick="app.videoCall.toggleVideoView()">
+</div>
+<div id="vidc_panel">
+	<div class="center_div">
+		<div id="vidc_callout_button" class="video_call_button" style="display: none">
+			<a href="#" class="button red" style="width:100%;" onclick="app.videoCall.hangupVideoCall()">挂断</a>
+		</div>
+		<div id="vidc_callin_button" class="video_call_button" style="text-align:center;display: none; width: 100%">
+			<a href="#" class="button green" style="width:49%;" onclick="app.videoCall.answerVideoCall()">接听</a>
+			<a href="#" class="button red" style="width:49%;" onclick="app.videoCall.refuseVideoCall()">挂断</a>
+		</div>
+	</div>
+</div>

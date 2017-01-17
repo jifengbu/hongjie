@@ -1,0 +1,1 @@
+因为插件已经整合到了appframework.ui.js中，因此就不需要添加插件了，对于windows客户端，需要增加一个af.desktopBrowsers.js的插件。

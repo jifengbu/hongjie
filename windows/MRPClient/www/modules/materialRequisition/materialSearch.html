@@ -1,0 +1,12 @@
+<header>
+    <h1>物料查询</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message chatbutton' onclick="app.changeToChatPage(app.materialSearch.id)"></a>
+    <a class="button icon check" style="float:right" onclick="app.materialSearch.doSelect()">确定</a>
+</header>
+<div style="background-color: lightgray" class="top_search_container"><input id="mash_search" class="leftInput" type="search" placeholder="条形码/商品名称" onkeydown="app.materialSearch.doSearchFromKeyBoard(this, event)"><span class="icon magnifier rightIcon" onclick="app.materialSearch.doSearch()"></span></div>
+<div id='mash_list_content'>
+<ul class='list' id='mash_list'>
+</ul>
+<br><br>
+</div>

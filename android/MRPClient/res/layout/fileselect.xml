@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250sp"
+    android:layout_height="400sp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="33sp"
+        android:scrollbars="horizontal" >
+        <TextView
+            android:id="@+id/mPath"
+            android:layout_width="wrap_content"
+            android:layout_height="33sp"
+            android:padding="5sp"
+            android:singleLine="true"
+            android:textColor="@color/blue"
+            android:textSize="18sp" >
+        </TextView>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="330sp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="125sp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/rounded_btn"
+            android:text="确定"
+            android:textColor="@color/green" />
+
+        <Button
+            android:id="@+id/buttonCancle"
+            android:layout_width="125sp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/rounded_btn"
+            android:text="取消"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+</LinearLayout>

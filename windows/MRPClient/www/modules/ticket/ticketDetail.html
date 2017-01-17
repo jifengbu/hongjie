@@ -1,0 +1,15 @@
+<header>
+	<h1>详情</h1>
+	<a class='backButton button'>返回</a>
+</header>
+<ul class='list' id='pn_ticket_detail_list'>
+</ul>
+<footer>
+	<div style="background-color:#ffffff;width:100%;height:100%">
+		<a href="#" class="button" id="tdl_more_button" onclick="app.ticketDetail.toggleMoreSelect()">+</a>
+		<textarea id="tdl_input_textarea" rows="1"  class="message_input" placeholder="评论" style="display: none;min-height: inherit;max-height: inherit"></textarea>
+		<div id="tdl_input_div" class="message_input" contenteditable="true" placeholder="评论"  style="display: none"></div>
+		<a href="#" class="button" id="tdl_send_button" onclick="app.ticketDetail.replyTicket()">&gt;</a>
+		<div id="tdl_more_panel" class="sgridmenu" style="display: none"></div>
+	</div>
+</footer>

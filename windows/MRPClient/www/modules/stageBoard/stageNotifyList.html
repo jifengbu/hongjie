@@ -1,0 +1,9 @@
+<header>
+    <h1><span id='stnotify_type'></span>提醒列表</h1>
+    <a class='backButton button' onclick="app.stageNotifyList.release();">返回</a>	
+    <a class='button icon message chatbutton' onclick="app.changeToChatPage(app.stageNotifyList.id)"></a>
+	<a class="button icon add" id='stnotify_list_addnew' style="float:right;display:none" onclick="app.stageNotifyList.showAddNew()" >新增</a>
+    <a class="button icon magnifier" style="float:right" onclick="app.stageNotifyList.showFilterSearch()">查询</a>
+</header>
+<ul class='list' id='stnotify_list'>
+</ul>

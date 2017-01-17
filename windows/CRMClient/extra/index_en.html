@@ -1,0 +1,104 @@
+﻿<html>
+	<head>
+		<title class="mainLang" langID="common.client_name">CRMClient</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="stylesheet" type="text/css" href="thirdparty/appframework/css/icons.css" />    
+		<link rel="stylesheet" type="text/css" href="thirdparty/appframework/css/af.ui.css" />
+
+        <!--script src="http://192.168.211.248:8081/target/target-script-min.js#fang"></script-->
+        <!--script src="http://67.224.83.75:8081/target/target-script-min.js#fang"></script-->
+		<script type="text/javascript" charset="utf-8" src="thirdparty/appframework/appframework.js"></script>
+        <script type="text/javascript" charset="utf-8" src="thirdparty/appframework/appframework.ui.js"></script>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="thirdparty/requirejs/require.js"></script>
+		<script type="text/javascript" src="common.js"></script>
+	</head>
+	<body>
+        <div id="iphone_device">
+            <div id="iphone_screen">
+                <div id="afui">
+                    <div id="splashscreen" class='ui-loader heavy'>
+                        <span class="mainLang" langID="common.hongjie_name">hongjie-soft</span>
+                        <br>
+                        <br>
+                        <span class='ui-icon ui-icon-loading'></span>
+                        <h1 class="mainLang" langID="common.client_name">CRMClient</h1>
+                    </div>
+                    <div id="content">
+                        <div class='panel'
+                             id='ui_home'
+                             data-header="none"
+                             data-defer="pages/uiHome.html"
+                             data-tab="navbar_home"
+                             data-load="uiHome=onLoad"
+                             data-unload="uiHome=onUnload"
+                             selected=true>
+                        </div>
+                        <div class='panel'
+                             id='ui_order'
+                             data-header="none"
+                             data-defer="pages/uiOrder.html"
+                             data-tab="navbar_order"
+                             data-load="uiOrder=onLoad"
+                             data-unload="uiOrder=onUnload">
+                        </div>
+                        <div class='panel'
+                             id='ui_service'
+                             data-header="none"
+                             data-defer="pages/uiService.html"
+                             data-tab="navbar_service"
+                             data-load="uiService=onLoad">
+                        </div>
+                        <div class='panel'
+                             id='ui_more'
+                             data-header="none"
+                             data-defer="pages/uiMore.html"
+                             data-tab="navbar_more"
+                             data-load="uiMore=onLoad">
+                        </div>
+                    </div>
+                    <div id="navbar">
+                        <a href="#ui_home" id='navbar_home' class='icon home mainLang' langID="common.home">首页</a>
+                        <a href="#ui_order" id='navbar_order' class="icon user mainLang" langID="common.myorder">我的订单</a>
+                        <a href="#ui_service" id='navbar_service' class="icon target mainLang" langID="common.service">产品服务</a>
+                        <a href="#ui_more" id='navbar_more' class="icon settings mainLang" langID="common.more">更多</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <script type="text/javascript">
+            "use strict";
+			var LANGTYPE = "en";
+            if (_os == "windows") {
+                requirejs(["thirdparty/appframework/af.desktopBrowsers.js"]);
+                $('#iphone_device').addClass('iphone_device');
+                $('#iphone_screen').addClass('iphone_screen');
+            }
+            document.addEventListener('deviceready', function(){
+                console.log("App onDeviceReady");
+                navigator.utils.getDocumentPath(function(path) {
+                    _external = path;
+                    requirejs([_external+"modules/config/requireConfig.js"],  function () {
+                        console.log("load external requireConfig success");
+                        requirejs(['app'], function (app) {
+                            app.initialize();
+                        });
+                    }, function(err){
+                        console.log("load external requireConfig failed, load assets requireConfig");
+                        requirejs(["modules/config/requireConfig.js"],  function () {
+                            requirejs(['app'], function (app) {
+                                app.initialize();
+                            });
+                        });
+                    });
+                });
+            }, false);
+        </script>
+	</body>
+</html>

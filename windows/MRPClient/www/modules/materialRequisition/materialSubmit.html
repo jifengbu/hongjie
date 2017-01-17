@@ -1,0 +1,18 @@
+<header>
+    <h1>提交申请</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message chatbutton' onclick="app.changeToChatPage(app.materialSubmit.id)"></a>
+</header>
+<div>
+    <div class="formGroupHead">操作人员:</div>
+    <input id="masu_user" type="text" readonly>
+    <div class="formGroupHead">所在部门:</div>
+    <input id="masu_organize" type="text" readonly>
+    <div class="formGroupHead">当前日期:</div>
+    <input id="masu_date" type="text" readonly>
+    <div class="formGroupHead">工厂编号:</div>
+    <input id="masu_factory" type="text" readonly placeholder="请选择工厂编号"  onclick='app.materialSubmit.getFactoryList()' style="width: 85%"  class="input_style"><label for="masu_factory" style="width: 12%;float:right;text-align: center" onclick='app.materialSubmit.getFactoryList()'><a class="icon add"></a></label>
+    <div class="formGroupHead">用途说明:</div>
+    <textarea id="masu_comment" rows="2" style="width: 85%;" class="input_style" placeholder="请输入用途说明"></textarea>
+    <a href="#" class="round_button" onclick="app.materialSubmit.doSubmit()">提交</a>
+</div>

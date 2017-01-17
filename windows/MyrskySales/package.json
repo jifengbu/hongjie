@@ -1,0 +1,20 @@
+{
+	"verCode": 100001,
+	"main":"www/index.html",
+	"name":"MyrskySales",
+	"description": "MyrskySales for windows",
+	"keywords": [ "MyrskySales", "hongjie-soft" ],
+	"window": {
+		"width": 484,
+		"height": 874,
+		"always-on-top":false,
+		"show_in_taskbar":true,
+		"transparent": true,
+		"resizable":false,
+		"frame": false,
+		"icon": "logo.png",
+		"toolbar": false,
+		"show": false
+	}
+}
+    

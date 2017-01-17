@@ -1,0 +1,24 @@
+.menuicon.menuitem_add::before{background-image:url(image/menuitem_add.png)}
+.menuicon.test::before{background-image:url(image/orderlist.png)}
+.menuicon.orderlist::before{background-image:url(image/orderlist.png)}
+.menuicon.yesterdayReport::before{background-image:url(image/yesterdayReport.png)}
+.menuicon.ticket::before{background-image:url(image/ticket.png)}
+.menuicon.passNumber::before{background-image:url(image/passNumber.png)}
+.menuicon.produceReport::before{background-image:url(image/produceReport.png)}
+.menuicon.crmorder::before{background-image:url(image/crmorder.png)}
+.menuicon.mrporder::before{background-image:url(image/mrporder.png)}
+.menuicon.produceNotice::before{background-image:url(image/produceNotice.png)}
+.menuicon.inoutReport::before{background-image:url(image/inoutReport.png)}
+.menuicon.stationDispatch::before{background-image:url(image/stationDispatch.png)}
+.menuicon.stationReport::before{background-image:url(image/stationReport.png)}
+.menuicon.witemDispatch::before{background-image:url(image/witemDispatch.png)}
+
+
+/*worksheet priority*/
+.worksheet_priority_6::before {background-image:url(image/priority_0.png)}
+.worksheet_priority_1::before {background-image:url(image/priority_1.png)}
+.worksheet_priority_2::before {background-image:url(image/priority_2.png)}
+.worksheet_priority_3::before {background-image:url(image/priority_3.png)}
+.worksheet_priority_4::before {background-image:url(image/priority_4.png)}
+.worksheet_priority_5::before {background-image:url(image/priority_5.png)}
+

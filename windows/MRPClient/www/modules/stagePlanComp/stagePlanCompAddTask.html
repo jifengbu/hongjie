@@ -1,0 +1,12 @@
+<header>
+    <h1>追加今日任务</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.stagePlanCompAddTask.id, 1)"></a>
+</header>
+<div>
+    <br>
+    <br>
+    <label for="spcar_title" style="width: 15%;">标题:</label><input id="spcar_title" type="text" placeholder="title" style="width: 85%;">
+    <label for="spcar_content" style="width: 15%;">内容:</label><textarea id="spcar_content" rows="10" placeholder="content" style="width: 85%;"></textarea>
+    <a href="#" class="round_button" style="width:80%;left:10%;position:relative;" onclick="app.stagePlanCompAddTask.addTask()">追加</a>
+</div>

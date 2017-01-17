@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="www/cordova.js"></script>
+</head>
+<body>
+<script>
+    "use strict";
+    document.addEventListener("deviceready", function() {
+        navigator.utils.getAppInfo(function(info){
+            window.location.href=info.documentPath+"www/index.html";
+        });
+    }, false);
+</script>

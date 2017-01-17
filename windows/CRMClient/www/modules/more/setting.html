@@ -1,0 +1,25 @@
+<header>
+	<h1 langID="morePanel.setting">设置</h1>
+	<a class='backButton button' langID="common.back">返回</a>
+	<a class="button icon check" style="float:right" onclick="app.setting.doMoreSettingDone()" langID="common.ok">确定</a>
+</header>
+<br>
+<br>
+<br>
+<div>
+    <table  width="100%" style="color: inherit;"><tr><td>
+	<label for="ms_lang_type" style="width: 40%;"><span langID="common.language">语言</span>:</label>
+	<select id="ms_lang_type" style="-webkit-appearance: listbox;width: 60%;">
+	  <option value="scn">简体中文</option>
+	  <option value="en">English</option>
+	</select>
+    </td></tr><tr><td>
+	<label for="ms_timeout" style="width: 40%;"><span langID="common.timeout">网络超时</span>:</label><input id="ms_timeout" type="text" placeholder="300000" style="width: 30%;">ms
+    </td></tr><tr><td>
+	<input id="ms_auto_login" type="checkbox">
+	<label for="ms_auto_login" class="" langID="login.auto_login">自动登录</label>
+    </td></tr><tr><td>
+    <input id="ms_auto_check_update" type="checkbox">
+	<label for="ms_auto_check_update" class="" langID="morePanel.auto_check_update">自动检查更新</label>
+    </td></tr></table>
+</div>

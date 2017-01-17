@@ -1,0 +1,41 @@
+<header>
+    <h1>查询条件</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.goodsSearch.id, 1)"></a>
+</header>
+<br>
+<div>
+    <table  width="100%" style="color: inherit;">
+        <tr><td>
+            <label for="sssh_time_op" style="width: 32%;">创建时间:</label>
+            <select id="sssh_time_op" style="width: 60%;" onchange="app.sheetSituationSearch.changeTimeOper(this.value)">
+                <option value="between" selected>between</option>
+                <option value="after" >></option>
+                <option value="equal">=</option>
+                <option value="before" ><</option>
+            </select>
+        </td></tr>
+        <tr><td width="100%">
+            <span id="sssh_time_between" >
+                <label for="sssh_time_1" style="width:15%;">从</label><input type="text" style="width: 35%;" id="sssh_time_1" readonly onclick="app.sheetSituationSearch.showPopMenu(this)" value=""><label for="sssh_time_2" style="width:7%;float:none;">到</label><input type="text" style="width: 35%;" id="sssh_time_2" readonly onclick="app.sheetSituationSearch.showPopMenu(this)" value="">
+            </span>
+            <span id="sssh_time_other" style="display: none">
+                <label for="sssh_time_3" style="width: 32%;"></label>
+                <input type="text" style="width: 60%;" id="sssh_time_3" readonly onclick="app.sheetSituationSearch.showPopMenu(this)" value="">
+            </span>
+        </td></tr>
+        <tr><td>
+            <label for="sssh_wsh_name" style="width: 32%;">加工单:</label>
+            <input id="sssh_wsh_name" type="text" style="width: 60%;">
+        </td></tr>
+        <tr><td>
+            <label for="sssh_workitem_name" style="width: 32%;">加工对象号:</label>
+            <input id="sssh_workitem_name" type="text" style="width: 60%;">
+        </td></tr>
+        <tr><td>
+            <label for="sssh_order_name" style="width: 32%;">订单编号:</label>
+            <input id="sssh_order_name" type="text" style="width: 60%;">
+        </td></tr>
+    </table>
+    <a href="#" class="round_button" style="width:99%" onclick="app.sheetSituationSearch.doFilterSearch()">查询</a>
+</div>

@@ -1,0 +1,549 @@
+@winWidth: `$(window).width()*0.8602`;
+@winHeight: `$(window).height()*0.7143`;
+
+@defaultWidth: 480;
+@defaultHeight: 720;
+@defaultFontSize: 22;
+@headerHeight: 54;
+@footerHeight: 64;
+
+@winRate: @winWidth/@winHeight;
+@scale: @winWidth/@defaultWidth;
+@scaleh: @winHeight/@defaultHeight;
+
+body {
+	font-size:unit(@defaultFontSize*@scale, px);
+} 
+#afui p {
+	margin:unit(@defaultFontSize*0.3*@scale, px) 0;
+	font-size:unit(@defaultFontSize*0.8*@scale, px);
+	line-height:unit(@defaultFontSize*1.2*@scale, px);
+}
+#afui > #splashscreen {
+	font-size:unit(@defaultFontSize*1.5*@scale, px);
+	padding-top:unit(80*@scale, px) !important;
+}
+#afui .header {
+	height:unit(@headerHeight*@scale, px);
+} 
+#afui .header h1 {
+    height: unit(@headerHeight*@scale, px);
+    font-size: unit(@headerHeight/2*@scale, px);
+    padding: unit(@headerHeight/8*@scale, px) 0;
+}
+#afui .panel {
+	padding:unit(10*@scale, px);
+} 
+#afui .footer {  
+    height:unit(@footerHeight*@scale, px);
+    padding:0 unit(2*@scale, px);
+}
+#afui footer>a:not(.button) {
+    top: unit(2*@scale, px);
+    height: unit(@footerHeight*@scale, px);
+    font-size: unit(@footerHeight*0.3*@scale, px);
+    line-height: unit(@footerHeight*1.5*@scale, px);
+}
+#afui footer>a:not(.button) .af-badge {
+	margin-left:unit(-16*@scale, px);
+}
+#afui footer>a.icon:not(.button):before {
+    top:unit(4*@scale, px);
+    font-size: unit(@footerHeight*0.5*@scale, px);
+}
+#afui > #menu.tabletMenu {
+	width:unit(200*@scale, px);
+}
+#afui > #aside_menu {
+	width:unit(200*@scale, px);
+}
+#afui #menu_scroller, #afui #aside_menu_scroller {
+	padding-bottom:unit(10*@scale, px);
+}
+#afui #menu .list > li > a,
+#afui #aside_menu .list > li > a
+{
+	margin-left:unit(6*@scale, px);
+}
+#afui #menu .list .divider, #afui #aside_menu .list .divider {
+	padding:unit(6*@scale, px);
+}
+#afui #menu .list > li > a:after, #afui #aside_menu .list > li > a:after  { margin-top: unit(-8*@scale, px); }
+#afui .splashscreen {
+	padding-left:unit(40*@scale, px);
+	padding-top:unit(30*@scale, px) !important;
+}
+#afui h2 {
+	height:unit(34*@scale, px);
+	font-size:unit(@defaultFontSize*1.2*@scale, px);
+	padding:unit(6*@scale, px) 0;
+	margin-bottom:unit(8*@scale, px);
+} 
+#afui .collapsed:after {
+	border-left:unit(5*@scale, px) solid transparent;
+	border-right:unit(5*@scale, px) solid transparent;
+	border-top:unit(6*@scale, px) solid #000;
+	top:unit(14*@scale, px);right:unit(14*@scale, px);
+}
+#afui .collapsed:before {
+	width:unit(14*@scale, px); height:unit(14*@scale, px);
+	top:unit(8*@scale, px);right:unit(10*@scale, px);
+}
+#afui .expanded:after {
+	border-left: unit(5*@scale, px) solid transparent;
+	border-right: unit(5*@scale, px) solid transparent;
+	border-bottom: unit(6*@scale, px) solid #000;
+	top:unit(13*@scale, px);right:unit(14*@scale, px);
+}
+#afui .expanded:before {
+	width:unit(14*@scale, px); height:unit(14*@scale, px);
+	top:unit(8*@scale, px);right:unit(10*@scale, px);
+}
+.ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: unit(200*@scale, px); margin-left: unit(-100*@scale, px); margin-top: unit(-35*@scale, px); padding: unit(10*@scale, px) unit(30*@scale, px); background: #666;background:rgba(0,0,0,.4);border-radius:9px;color:white;}
+.ui-loader h1 { font-size: unit(@defaultFontSize*0.8*@scale, px); text-align: center; }
+.ui-loader .ui-icon { position: static; display: block; opacity: .9; margin: 0 auto; width: unit(35*@scale, px); height: unit(35*@scale, px); background-color: transparent; }
+.ui-icon-loading {
+	width: unit(40*@scale, px);
+	height: unit(40*@scale, px);
+	background-size: unit(35*@scale, px) unit(35*@scale, px);
+}
+#afui .menuButton {
+	top: unit(5*@scale, px);
+	right: unit(-8*@scale, px);
+	height: unit(36*@scale, px);
+	width: unit(36*@scale, px);
+}
+#afui .menuButton:after {
+	border-bottom: unit(9*@scale, px) double white;
+	border-top: unit(3*@scale, px) solid white;
+	top: unit(9*@scale, px);
+	left: unit(3*@scale, px);
+	height: unit(3*@scale, px);
+	width: unit(15*@scale, px);
+}
+#afui .hasMenu.on {
+	-webkit-transform:translate3d(unit(200*@scale, px),0,0);
+	transform:translate(unit(200*@scale, px),0);
+}
+#afui .modalbutton {
+	right:unit(5*@scale, px);
+	height:unit(32*@scale, px);
+	width:unit(58*@scale, px);
+	line-height:unit(32*@scale, px);
+}
+#afui .closebutton  {
+	top:unit(6*@scale, px); right:unit(6*@scale, px);
+	height:unit(24*@scale, px) ;
+	width:unit(24*@scale, px) ;
+	font-size:unit(@defaultFontSize*@scale, px);
+	line-height:unit(18*@scale, px);
+}
+#afui .panel > .afScrollPanel > .list {
+	margin:0px unit(-10*@scale, px);
+}
+@media handheld, only screen and (min-width: 768px) {
+	#afui .footer.hasMenu.splitview, #afui .header.hasMenu.splitview, #afui  #content.hasMenu.splitview  {
+		margin-left:unit(256*@scale, px);
+		width: -webkit-calc(100% - unit(256*@scale, px));
+		width: calc(100% - unit(256*@scale, px));
+	}
+	#afui > #aside_menu.splitview {
+		width:unit(256*@scale, px);
+	}
+	#afui > #menu.tabletMenu.splitview {
+		width:unit(256*@scale, px);
+	}
+}
+#afui .backButton {
+	line-height:unit(44*@scale, px);
+	left: unit(25*@scale, px);
+	font-size: unit(@defaultFontSize*@scale, px);
+	height: unit(44*@scale, px);
+	width:unit(50*@scale, px);
+}
+#afui .backButton::before {
+	font-size:unit(@defaultFontSize*@scale, px);
+	top: unit(10*@scale, px);
+	left: unit(-20*@scale, px);
+}
+#mask_backButton {
+  height: unit(54*@scale, px);
+  width: unit(80*@scale, px);
+}
+#afui .collapsed:after {border-top: unit(6*@scale, px) solid;}
+#afui .expanded:after {border-bottom: unit(6*@scale, px) solid;}
+#afui input.toggle+label > span {
+	width:unit(27*@scale, px);
+	height:unit(23*@scale, px);
+}
+#afui .button.previous::after {
+	font-size:unit(@defaultFontSize*@scale, px);
+	top: unit(2*@scale, px);
+	left: unit(-25*@scale, px);
+}
+#afui .button.next::after {
+	font-size:unit(@defaultFontSize*@scale, px);
+	top: unit(6*@scale, px);
+	right: unit(-25*@scale, px);
+}
+#afui .afPopup>FOOTER>A{
+	width: unit(120*@scale, px);
+}
+#afui .list {
+	margin-bottom: unit(10*@scale, px);
+}
+#afui .list li {
+	padding: unit(20*@scale, px) unit(20*@scale, px) unit(20*@scale, px) unit(10*@scale, px);
+}
+#afui .list > li > a {
+	margin: unit(-20*@scale, px) unit(-20*@scale, px) unit(-20*@scale, px) unit(-10*@scale, px);
+	padding: unit(20*@scale, px) unit(20*@scale, px) unit(20*@scale, px) unit(10*@scale, px);
+}
+#afui .list a .af-badge {
+	right: unit(30*@scale, px);
+	margin-top: unit(-10*@scale, px);
+}
+#afui .list > li > a:after {
+	right: unit(8*@scale, px);
+}
+#afui .list .divider {
+	padding-top: unit(6*@scale, px);
+	padding-bottom: unit(6*@scale, px);
+	font-size: unit(@defaultFontSize*@scale, px);
+	line-height: unit(18*@scale, px);
+	padding-right: unit(60*@scale, px);
+}
+#afui .list.inset {
+	border-radius: unit(6*@scale, px);
+	margin: unit(10*@scale, px);
+}
+#afui select,
+#afui textarea,
+#afui input[type="text"],
+#afui input[type=search],
+#afui input[type="password"],
+#afui input[type="datetime"],
+#afui input[type="datetime-local"],
+#afui input[type="date"],
+#afui input[type="month"],
+#afui input[type="time"],
+#afui input[type="week"],
+#afui input[type="number"],
+#afui input[type="email"],
+#afui input[type="url"],
+#afui input[type="tel"],
+#afui input[type="color"],
+#afui .input-group {  
+	height: auto;
+	padding: unit(10*@scale, px);
+	margin-bottom: unit(10*@scale, px);
+	border-radius: unit(5*@scale, px);
+	font-size: unit(@defaultFontSize*@scale, px);
+}
+#afui input[type="radio"] + label,
+#afui input[type="checkbox"] + label  {
+	padding: unit(10*@scale, px) 0 0 unit(10*@scale, px);
+}
+#afui input[type="radio"]:not(.toggle) + label:before {
+	margin-right: unit(5*@scale, px);
+	top: unit(8*@scale, px);
+	margin-left: unit(-@defaultFontSize*1.8*@scale, px);
+}
+#afui input[type="checkbox"] + label:before {
+	top: unit(8*@scale, px);
+	left: unit(-25*@scale, px);
+}
+#afui label {
+	font-size: unit(@defaultFontSize*@scale, px);
+	padding: unit(11*@scale, px) unit(6*@scale, px);
+}
+#afui .input-group {
+	padding: unit(12*@scale, px);
+}
+#afui .input-group input[type=submit] {
+	margin: unit(5*@scale, px);
+}
+#afui input.toggle:checked + label:before {
+	left: unit(5*@scale, px);
+	width: unit(42*@scale, px);
+	top: unit(3*@scale, px);
+}
+#afui input.toggle + label:after {
+	width: unit(42*@scale, px);
+	top: unit(2*@scale, px);
+	left: unit(30*@scale, px);
+}
+#afui input.toggle + label {
+	margin: unit(5*@scale, px);
+	height: unit(24*@scale, px);
+	width: unit(65*@scale, px);
+}
+#afui input.toggle + label > span {
+	width: unit(28*@scale, px);
+	height: unit(28*@scale, px);
+	top: unit(-2*@scale, px);
+}
+#afui .formGroupHead {
+	font-size: unit(@defaultFontSize*@scale, px);
+	margin: unit(16*@scale, px) 0 unit(8*@scale, px);
+}
+#afui .button {
+	padding:unit(8*@scale, px) unit(12*@scale, px);
+}
+#afui .button.previous {
+	margin-left:unit(16*@scale, px);
+	padding-left:unit(6*@scale, px);
+}
+#afui .button.next {
+	margin-right:unit(17*@scale, px);
+	padding-right:unit(6*@scale, px);
+}
+#afui .button.previous::after {
+	width:unit(25*@scale, px); height:unit(25*@scale, px);
+	top:unit(3*@scale, px); left:unit(-11*@scale, px);
+}
+#afui .button.next::after {
+	width:unit(25*@scale, px); height:unit(25*@scale, px);
+	top:unit(3*@scale, px); right:unit(-11*@scale, px);
+}
+#afui .button-grouped { 
+	margin: unit(5*@scale, px);
+}
+#afui .header .button {
+ 	font-size:unit(@defaultFontSize*@scale, px);
+	padding:unit(4*@scale, px);
+	height:unit((-15+@headerHeight)*@scale, px);
+	margin:unit(5*@scale, px);
+}
+.header .button.icon:before{
+	padding-left:unit(6*@scale, px);
+}
+#afui .af-badge {
+	top:unit(2*@scale, px); right:unit(2*@scale, px);
+	min-width:unit(20*@scale, px);	max-width:90%; height:unit(20*@scale, px);
+	padding:0 unit(3*@scale, px);
+	font-size:unit(@defaultFontSize*0.5*@scale, px);
+	line-height:unit(19*@scale, px);
+}
+#afui.jfb {
+	font-size: unit(@defaultFontSize*@scale, px);
+}
+#afui.jfb .backButton {
+    line-height:unit(15*@scale, px);
+    width:unit(58*@scale, px);
+    top:unit(5*@scale, px);
+    left:unit(5*@scale, px);
+    font-size:unit(@defaultFontSize*@scale, px);
+    padding:unit(12*@scale, px) !important;
+    height:unit(40*@scale, px);
+    margin:0 0 0 unit(10*@scale, px) !important;
+    padding-left:unit(8*@scale, px) !important;
+}
+#afui.jfb .backButton::before {
+    width:unit(28*@scale, px); 
+	height:unit(29*@scale, px);
+    top:unit(4*@scale, px); 
+    left:unit(-14*@scale, px);
+	font-size:unit(@defaultFontSize*@scale, px);
+	line-height: 1.2;
+}
+#afui.jfb .afPopup>HEADER{
+	font-size:unit(@defaultFontSize*@scale, px);    
+}
+#afui.jfb .afPopup>FOOTER>A#cancel{
+	width:unit(120*@scale, px);
+}
+#afui.jfb .afPopup>FOOTER>A#action{
+	width:unit(120*@scale, px);
+}
+#afui.jfb input[type="range"] {
+	height: unit(2*@scale, px);
+	top:unit(-10*@scale, px);
+	margin-top: unit(15*@scale, px);
+}
+#afui.jfb input[type="range"]::-webkit-slider-thumb {
+	width: unit(15*@scale, px);
+	height: unit(15*@scale, px);
+}
+#af_actionsheet {
+	padding-left:unit(10*@scale, px);
+	padding-right:unit(10*@scale, px);
+	padding-top:unit(10*@scale, px);
+}
+#af_actionsheet a {
+	line-height:unit(50*@scale, px);
+	font-size:unit(@defaultFontSize*@scale, px);
+	margin-bottom:unit(20*@scale, px);
+}
+.afPopup {
+	width: unit(280*@scale, px);
+	padding: unit(10*@scale, px);
+}
+.afPopup.wide {
+  width: unit(440*@scale, px);
+}
+.afPopup>HEADER{
+	font-size:unit(@defaultFontSize*@scale, px);
+	padding:unit(5*@scale, px);
+}
+.afPopup>DIV{
+	font-size:unit(@defaultFontSize*@scale, px);
+	margin:unit(8*@scale, px);
+}
+.afPopup>FOOTER>A#cancel{
+	margin-left:unit(5*@scale, px);
+}
+.afPopup>FOOTER>A#action{
+	margin-right:unit(5*@scale, px);
+}
+.afPopup>FOOTER>A.center{
+	margin:unit(8*@scale, px);
+}
+.scrollBar { 
+	width: unit(5*@scale, px) !important;
+	height: unit(20*@scale, px) !important;
+}
+#afSelectBoxContainer {
+	max-width:unit(280*@scale, px);
+	min-height:unit(100*@scale, px);
+	max-height:unit(300*@scale, px);
+	margin-top: unit(-150*@scale, px);
+	margin-left: unit(-138*@scale, px);
+}
+.afFakeSelect {
+	width: unit(200*@scale, px);
+	height: unit(30*@scale, px);
+	padding-left: unit(10*@scale, px);
+	padding-right: unit(35*@scale, px);
+}
+.afFakeSelect:after {
+	top:unit(5*@scale, px);
+	right:unit(5*@scale, px);
+	border: unit(14*@scale, px) solid transparent;
+}
+#afSelectBoxContainer #afSelectDone,#afSelectBoxContainer #afSelectCancel{
+	margin-top:unit(10*@scale, px);
+	height: unit(30*@scale, px);
+	width: unit(100*@scale, px);
+	margin-left: unit(10*@scale, px);
+}
+#afSelectBoxContainer #afSelectCancel {
+	margin-right:unit(10*@scale, px);
+}
+#afSelectBoxContainer #afSelectClose {
+	padding-bottom:unit(5*@scale, px);
+}
+
+#afui.jfb #af_actionsheet a {
+	border: 1px solid #111;
+}
+
+//less for pull
+
+#af_pullUp {
+  height:unit(40*@scale, px);
+  line-height:unit(80*@scale, px);
+  padding:unit(10*@scale, px);
+  font-size:unit(20*@scale, px);
+}
+.af_pullDown {
+	height:unit(80*@scale, px);
+	line-height:unit(40*@scale, px);
+	font-size:unit(20*@scale, px);
+}
+
+.af_pullDown .label::before, #af_pullUp .label::before {
+  background-size: unit(40*@scale, px) unit(40*@scale, px);
+}
+
+//screen for windows
+.iphone_screen {
+  top:unit(138*@scaleh, px);
+  left:unit(34.5*@scale, px);
+  right:unit(34.5*@scale, px);
+  bottom:unit(136.5*@scaleh, px);
+}
+
+//less for menu_icons
+.grid_menu {
+	margin-top: unit(@winWidth*0.05, px);
+}
+.grid_menu>a{
+	height: unit(@winWidth*0.21, px);
+	font-size: @winWidth/30;
+	line-height: unit(@winWidth*0.29, px);
+}
+.menuicon::before {
+	background-size:unit(@winWidth/8, px) unit(@winWidth/8, px);
+}
+
+.menuicon span.delete-icon {
+  right:unit(20*@scale, px);
+  width: unit(20*@scale, px);
+  height: unit(20*@scale, px);
+  border-radius: unit(20*@scale, px);
+  font-size: unit(40*@scale, px);
+  line-height: unit(15*@scale, px);
+}
+
+.user_head:before {
+  left: unit(40*@scale, px);
+  top: unit(10*@scale, px);
+}
+
+.user_head:before {
+  width: unit(30*@scale, px);
+  height: unit(30*@scale, px);
+  background-size:unit(30*@scale, px) unit(30*@scale, px);
+}
+
+.round_button {
+  line-height: unit(36*@scale, px);
+  font-size: unit(22*@scale, px);
+  margin-bottom: unit(10*@scale, px);
+}
+
+#login_company_version_right{
+  top:unit(620*@scaleh, px);
+  font-size:unit(18*@scaleh, px);
+}
+
+#setting_clear_company{
+  top:unit(580*@scaleh, px);
+}
+
+/*work dispatch*/
+.worksheet_priority::before {
+  width: 30px;
+  height: 40px;
+  background-size:auto 25px;
+}
+
+.worksheet_priority_small::before {
+  width: 30px;
+  height: unit(25*@scale, px);
+  background-size:auto unit(25*@scale, px);
+}
+
+/*carousel*/
+.carousel_content {
+  margin-bottom: unit(12*@scale, px);
+  margin-left: unit(60*@scale, px);
+}
+
+.carousel::before{
+  top:unit(2*@scale, px);
+  border-radius: unit(20*@scale, px);
+  width: unit(20*@scale, px);
+  height: unit(20*@scale, px);
+  margin-left: unit(12*@scale, px);
+}
+
+/*ui-async-on*/
+.ui-async-on {
+  width: unit(20*@scale, px);
+  height: unit(20*@scale, px);
+  background-size: unit(20*@scale, px);
+  left: unit(230*@scale, px);
+  font-size: unit(15*@scale, px);
+}

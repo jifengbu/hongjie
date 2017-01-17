@@ -1,0 +1,40 @@
+<header>
+	<h1>帮助</h1>
+	<a class='backButton button'>返回</a>
+</header>
+<ul class='list'>
+    <li>
+        <h2 class="collapsed" onclick="app.utils.showHide(this, 'help_login_logout')">登陆和注销</h2>
+        <div id="help_login_logout" style="display: none">
+            进入程序后出现在登陆界面，输入用户名和密码后，就可以登陆了，同时可以选中保存密码，也可以选中自动登陆，如果选择了自动登陆，以后进入登陆界面后就自动登陆，如果想取消自动登陆，进入设置取消自动登陆。<br>
+            进入个人信息可以注销登陆，注销登陆后将会清除保存的用户名和密码。
+        </div>
+    </li>
+    <li>
+        <h2 class="collapsed" onclick="app.utils.showHide(this, 'help_switch_page')">页面切换</h2>
+        <div id="help_switch_page" style="display: none">
+            在主界面可以左右滑动界面切换页面，进入模块后可以按左上角的返回按钮返回，同时可以按手机返回键返回上一个界面。
+        </div>
+    </li>
+    <li>
+        <h2 class="collapsed" onclick="app.utils.showHide(this, 'help_exit')">程序退出</h2>
+        <div id="help_exit" style="display: none">
+            进入我的工作界面后，点击两次返回键就可以退出程序了。
+        </div>
+    </li>
+    <li>
+        <h2 class="collapsed" onclick="app.utils.showHide(this, 'help_update')">软件更新</h2>
+        <div id="help_update" style="display: none">
+            在进入程序的时候会自动检查更新，如果检查到新的APP版本，会提示是否需要更新，如果选择不更新，就会继续更新模块，如果选择更新，就会先更新APP，再更新模块。<br>
+            也可以进入<更多><img src="more.png"  style="height:1.2em;width:auto;">点击<检查更新>来手动更新程序和模块。<br>
+            如果你不想启动程序的时候自动检查更新程序，你可以进入<更多><img src="more.png"  style="height:1.2em;width:auto;"><设置>里关闭启动时自动检查更新。
+        </div>
+    </li>
+    <li>
+        <h2 class="collapsed" onclick="app.utils.showHide(this, 'help_error')">异常处理</h2>
+        <div id="help_error" style="display: none">
+            如果程序出现卡死，崩溃等异常，可以退出程序，杀死进程（长按手机home键，拖出MRP客户端进程就可以杀死该进程了）<br>
+            如果还是会出现问题，进入手机设置，应用程序管理，找到MRP客户端，清除缓存后启动MRP客户端就可以了。
+        </div>
+    </li>
+</ul>

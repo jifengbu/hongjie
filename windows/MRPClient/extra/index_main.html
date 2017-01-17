@@ -1,0 +1,69 @@
+﻿<html>
+	<head>
+		<title>MRP客户端</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	</head>
+	<body>
+        <script>
+            "use strict";
+            var Window = window.require('nw.gui').Window,
+				win = Window.get(),
+				width, height, x, y;
+			if (window.process.platform == "darwin") {
+				height = window.screen.availHeight * 0.91;
+				y = parseInt(window.screen.availHeight * 0.045);
+			} else {
+				height = window.screen.availHeight - 50;
+				y = 25;
+			}
+			width = parseInt(height * 5 / 9);
+			x = parseInt((window.screen.availWidth - width)/2);
+			height = parseInt(height);
+			win.resizeTo(width, height);
+			win.moveTo(x, y);
+
+			win.splashStartTime = new Date().getTime();
+            win.splashwin = Window.open('splash.html', {
+				"title": "MRP客户端",
+                "width": width,
+                "height": height,
+				'x':win.x,
+				'y':win.y,
+                "always-on-top":true,
+                "show_in_taskbar":true,
+                "transparent": true,
+                "resizable":false,
+                "frame": false,
+                "icon": "logo.png",
+                "toolbar": false,
+                "show": false
+            });
+
+
+			var fs = window.require('fs-extra'),
+				workPath = window.require('nw.gui').App.dataPath+"/www",
+                installVerCode = window.require('nw.gui').App.manifest.verCode,
+				needCopy = false;
+                if (installVerCode != localStorage.installVerCode || !fs.existsSync(workPath+"/version.json")) {
+                    needCopy = true;
+					localStorage.clear();
+                    localStorage.installVerCode = installVerCode;
+                }
+			if (!needCopy) {
+                window.location.href = workPath+"/index.html";
+            } else {
+                fs.copy("www", workPath, function () {
+                    fs.copy("version.json", workPath + "/version.json", function () {
+						setTimeout(function(){
+							window.location.href = workPath + "/index.html";
+						}, 500);
+                    });
+                });
+            }
+		</script>
+	</body>
+</html>

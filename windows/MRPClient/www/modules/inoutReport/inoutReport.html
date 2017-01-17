@@ -1,0 +1,17 @@
+<header>
+	<h1>投入产出</h1>
+	<a class='backButton button' onclick="app.inoutReport.release()">返回</a>
+</header>
+<br>
+<br>
+<br>
+<div>
+    <label for="ms_sex" style="width: 25%;">统计范围:</label>
+    <div class="input-group" id="ms_sex">
+        <input id="ior_month" type="radio" name="ior_range" value="month" checked><label for="ior_month">按月统计</label>
+        <input id="ior_date" type="radio" name="ior_range" value="day"><label for="ior_date">按日统计</label>
+        <br style="clear:both">
+    </div>
+    <label for="ior_time" style="width: 25%;">统计时间:</label><input id="ior_time" type="text" style="width: 74%;" readonly onclick="app.inoutReport.doSelectDate()">
+</div>
+<a class="button block" onclick="app.inoutReport.getInoutReport()">查询</a>

@@ -1,0 +1,66 @@
+<header>
+    <h1>添加其他选项</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.otherInfo.id, 1)"></a>
+</header>
+<div>
+<table  width="100%" style="color: inherit;">
+    <tr><td>
+        <label for="gtoi_check_qty" style="width: 32%;">检测数量:</label>
+        <input id="gtoi_check_qty" type="number"  style="width: 60%;" class="input_style" placeholder="请输入检测数量">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_fine_qty" style="width: 32%;">合格数量:</label>
+        <input id="gtoi_fine_qty" type="number"  style="width: 60%;" class="input_style" placeholder="请输入合格数量">
+    </td></tr>
+    <tr id="gtoi_fine_set_qty_content" style="display: none;"><td>
+        <label for="gtoi_fine_set_qty" style="width: 32%;">合格数量SET:</label>
+        <input id="gtoi_fine_set_qty" type="text"  style="width: 60%;" class="input_style" placeholder="请输入合格数量SET">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_fail_qty" style="width: 32%;">废品数量:</label>
+        <input id="gtoi_fail_qty" type="text"  style="width: 60%;" class="input_style" placeholder="请输入废品数量">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_return_qty" style="width: 32%;">退回数量:</label>
+        <input id="gtoi_return_qty" type="text"  style="width: 60%;" class="input_style" placeholder="请输入退回数量">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_unit_weight" style="width: 32%;">毛重:</label>
+        <input id="gtoi_unit_weight" type="text"  style="width: 60%;" class="input_style" placeholder="请输入item编号">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_batch_qty" style="width: 32%;">毛重数量:</label>
+        <input id="gtoi_batch_qty" type="text"  style="width: 60%;" class="input_style" placeholder="请输入毛重数量">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_assoc_pcb" style="width: 32%;">关联PCB数量:</label>
+        <input id="gtoi_assoc_pcb" type="text"  style="width: 60%;" class="input_style" placeholder="请输入关联PCB数量">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_package_num" style="width: 32%;">每包数量:</label>
+        <input id="gtoi_package_num" type="text"  style="width: 60%;" class="input_style" placeholder="请输入每包数量">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_comment" style="width: 32%;">留言:</label>
+        <textarea id="gtoi_comment" rows="2" style="width: 60%;" class="input_style" placeholder="请输入备注"></textarea>
+    </td></tr>
+    <!--tr><td>
+        <label for="gtoi_receiver" style="width: 32%;">收货人:</label>
+        <input type="text" style="width: 60%;" id="gtoi_receiver" readonly onclick="app.goodsTakeOtherInfo.setPerson(this)" value="" class="input_style">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_receive_time" style="width: 32%;">收货时间:</label>
+        <input type="text" style="width: 60%;" id="gtoi_receive_time" readonly onclick="app.goodsTakeOtherInfo.setTime(this)" value="" class="input_style">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_check_user" style="width: 32%;">核对人:</label>
+        <input type="text" style="width: 60%;" id="gtoi_check_user" readonly onclick="app.goodsTakeOtherInfo.setPerson(this)" value="" class="input_style">
+    </td></tr>
+    <tr><td>
+        <label for="gtoi_check_time" style="width: 32%;">盘点时间:</label>
+        <input type="text" style="width: 60%;" id="gtoi_check_time" readonly onclick="app.goodsTakeOtherInfo.setTime(this)" value="" class="input_style">
+    </td></tr-->
+</table>
+<a href="#" class="round_button" style="width:99%" onclick="app.goodsTakeOtherInfo.setGoodsTakeOtherInfo()">确定</a>
+</div>

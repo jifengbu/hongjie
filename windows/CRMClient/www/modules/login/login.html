@@ -1,0 +1,20 @@
+<div class="formGroupHead"><span langID="login.user_id">用户名</span>:</div>
+<input type='text' id="login_username" class='af-ui-forms' placeholder="Enter your user" style="background-color:#EEEED1">
+<div class="formGroupHead"><span langID="login.password">密码</span>:</div>
+<input type='password' id="login_password" class='af-ui-forms' placeholder="Enter your pwd" style="background-color:#EEEED1"><br />
+<div>
+	<input id="login_password_record" type="checkbox">
+	<label for="login_password_record" class=""><span langID="login.remeber_password">记住密码</span></label>
+</div>
+<br />
+<br />
+<div>
+	<input id="login_auto_login" type="checkbox">
+	<label for="login_auto_login" class=""><span langID="login.auto_login">自动登录</span></label>
+</div>
+<textarea style="visibility: hidden;height:5px"></textarea>
+<a class="button block" onclick="app.login.doLogin()"><span langID="login.login">登录</span></a>
+<p id="login_company_version_right">
+    <span id="login_company_version" >CRM客户端 v1.0.1</span><br>
+    <span langID="common.hongjie_name">贵阳宏杰科技有限公司</span>©2014-2016
+</p>

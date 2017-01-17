@@ -1,0 +1,22 @@
+<header>
+    <h1>搜索群组</h1>
+    <a class='backButton button'>返回</a>
+</header>
+
+<div class="formGroupHead">群组名称:</div>
+<input type='text' id="sg_search_name" class='af-ui-forms input_style' placeholder="例如:讨论组">
+
+<div class="formGroupHead">群主姓名:</div>
+<div>
+<span class="icon add" style="float: right" onclick="app.searchGroup.doAddCreator()"></span>
+<input type='text' id="sg_search_creator" class='af-ui-forms input_style' placeholder="例如:方运江" style="width:90%;">
+</div>
+<div class="formGroupHead">包含群成员:</div>
+<span class="icon add" style="float: right" onclick="app.searchGroup.doAddMembers()"></span>
+<div type='text' id="sg_search_users" class='af-ui-forms' style="background-color:#EEEEE0; width:90%;line-height: 25px; line-break: loose;border-radius: 10px;">
+    <br>
+    <br>
+</div>
+<div style="visibility: hidden;height:40px;width:99%;"></div>
+<a class="button block green" onclick="app.searchGroup.doSearchGroup()">搜索</a>
+

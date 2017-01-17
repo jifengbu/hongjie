@@ -1,0 +1,52 @@
+<header>
+    <h1>查询条件</h1>
+    <a class='backButton button'>返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.materialListSearch.id, 1)"></a>
+</header>
+<br>
+<div>
+    <table  width="100%" style="color: inherit;">
+        <tr><td>
+            <label for="mtls_app_number" style="width: 32%;">申请单号:</label>
+            <input id="mtls_app_number" type="text" style="width: 60%;" class="input_style" placeholder="请输入申请单号">
+        </td></tr>
+        <tr><td>
+            <label for="mtls_use_branch" style="width: 32%;">使用部门:</label>
+            <input id="mtls_use_branch" type="text" style="width: 60%;" class="input_style" placeholder="请输入使用部门">
+        </td></tr>
+        <tr><td>
+            <label for="mtls_factory_name" style="width: 32%;">工厂编号:</label>
+            <input id="mtls_factory_name" type="text" style="width: 60%;" class="input_style" placeholder="请输入工厂编号">
+        </td></tr>
+        <tr><td>
+            <label for="mtls_part_id" style="width: 32%;">物料ID:</label>
+            <input id="mtls_part_id" type="text" style="width: 60%;" class="input_style" placeholder="请输入物料ID">
+        </td></tr>
+        <tr><td>
+            <label for="mtls_part_name" style="width: 32%;">物料名称:</label>
+            <input id="mtls_part_name" type="text" style="width: 60%;" class="input_style" placeholder="请输入物料名称">
+        </td></tr>
+        <tr><td>
+            <label for="mtls_value" style="width: 32%;">物料编码:</label>
+            <input id="mtls_value" type="text" style="width: 60%;" class="input_style" placeholder="请输入物料编码">
+        </td></tr>
+        <tr><td>
+            <label for="mtls_operator_time" style="width: 32%;">操作日期:</label>
+            <input id="mtls_operator_time" type="text" style="width: 50%;" class="input_style" readonly onclick="app.materialListSearch.showPopMenu(this)" value=""><span class="icon remove" style="padding:4.17%;color:red;" onclick="app.materialListSearch.clearDate();event.stopPropagation();"></span>
+        </td></tr>
+        <tr><td>
+            <label for="mtls_status" style="width: 32%;">状态:</label>
+            <select id="mtls_status" style="width: 60%;" class="" >
+                <option value="pengding">未审核</option>
+                <option value="inventory">已出库</option>
+                <option value="approvel">已审核</option>
+                <option value="finish">已完成</option>
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="mtls_purpose_comment" style="width: 32%;">用途说明:</label>
+            <textarea id="mtls_purpose_comment" rows="2" style="width: 60%;" class="input_style" placeholder="请输入用途说明"></textarea>
+        </td></tr>
+    </table>
+    <a href="#" class="round_button" style="width:99%" onclick="app.materialListSearch.doFilterSearch()">查询</a>
+</div>

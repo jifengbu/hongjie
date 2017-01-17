@@ -1,0 +1,155 @@
+.menuicon.menuitem_add::before{background-image:url(image/menuitem_add.png)}
+.menuicon.test::before{background-image:url(image/orderlist.png)}
+.menuicon.orderlist::before{background-image:url(image/orderlist.png)}
+.menuicon.yesterdayReport::before{background-image:url(image/yesterdayReport.png)}
+.menuicon.ticket::before{background-image:url(image/ticket.png)}
+.menuicon.passNumber::before{background-image:url(image/passNumber.png)}
+.menuicon.produceReport::before{background-image:url(image/produceReport.png)}
+.menuicon.crmorder::before{background-image:url(image/crmorder.png)}
+.menuicon.mrporder::before{background-image:url(image/mrporder.png)}
+.menuicon.produceNotice::before{background-image:url(image/produceNotice.png)}
+.menuicon.inoutReport::before{background-image:url(image/inoutReport.png)}
+.menuicon.stationDispatch::before{background-image:url(image/stationDispatch.png)}
+.menuicon.stationReport::before{background-image:url(image/stationReport.png)}
+.menuicon.witemDispatch::before{background-image:url(image/witemDispatch.png)}
+.menuicon.stationComp::before{background-image:url(image/stationComp.png)}
+.menuicon.stationCompSummary::before{background-image:url(image/stationCompSummary.png)}
+.menuicon.stagePlan::before{background-image:url(image/stagePlan.png)}
+.menuicon.stagePlanComp::before{background-image:url(image/stagePlanComp.png)}
+.menuicon.sheetSituation::before{background-image:url(image/sheetSituation.png)}
+.menuicon.materialRequisition::before{background-image:url(image/sheetSituation.png)}
+.menuicon.goodsStorage::before{background-image:url(image/stagePlan.png)}
+.menuicon.workNotify::before{background-image:url(image/produceNotice.png)}
+.menuicon.stageBoard::before{background-image:url(image/stageBoard.png)}
+/*worksheet priority*/
+.worksheet_priority_0::before {background-image:url(image/priority_0.png)}
+.worksheet_priority_1::before {background-image:url(image/priority_1.png)}
+.worksheet_priority_2::before {background-image:url(image/priority_2.png)}
+.worksheet_priority_3::before {background-image:url(image/priority_3.png)}
+.worksheet_priority_4::before {background-image:url(image/priority_4.png)}
+.worksheet_priority_5::before {background-image:url(image/priority_5.png)}
+
+/*chat*/
+.smenuicon.img_camera::before {background-image:url(chat/camera.png)}
+.smenuicon.img_common_sentence::before {background-image:url(chat/common_sentence.png)}
+.smenuicon.img_contact::before {background-image:url(chat/contact.png)}
+.smenuicon.img_group_sendto::before {background-image:url(chat/user_online.png)}
+.smenuicon.img_emoji::before {background-image:url(chat/emoji.png)}
+.smenuicon.img_photo_album::before {background-image:url(chat/photo_album.png)}
+.smenuicon.img_photo_library::before {background-image:url(chat/photo_library.png)}
+
+.img_default_head {background-image:url(chat/default_head.png)}
+.img_group_chat {background-image:url(chat/group_chat.png)}
+.img_user_offline {background-image:url(chat/user_offline.png)}
+.img_user_online {background-image:url(chat/user_online.png)}
+
+.img_create_group {background-image:url(chat/create_group.png)}
+.img_search_group {background-image:url(chat/search_group.png)}
+.img_send_multi {background-image:url(chat/send_multi.jpg)}
+
+/*emojs*/
+.emoji_0 {background-image:url(emoji/emoji_0.png)}
+.emoji_1 {background-image:url(emoji/emoji_1.png)}
+.emoji_2 {background-image:url(emoji/emoji_2.png)}
+.emoji_3 {background-image:url(emoji/emoji_3.png)}
+.emoji_4 {background-image:url(emoji/emoji_4.png)}
+.emoji_5 {background-image:url(emoji/emoji_5.png)}
+.emoji_6 {background-image:url(emoji/emoji_6.png)}
+.emoji_7 {background-image:url(emoji/emoji_7.png)}
+.emoji_8 {background-image:url(emoji/emoji_8.png)}
+.emoji_9 {background-image:url(emoji/emoji_9.png)}
+.emoji_10 {background-image:url(emoji/emoji_10.png)}
+.emoji_11 {background-image:url(emoji/emoji_11.png)}
+.emoji_12 {background-image:url(emoji/emoji_12.png)}
+.emoji_13 {background-image:url(emoji/emoji_13.png)}
+.emoji_14 {background-image:url(emoji/emoji_14.png)}
+.emoji_15 {background-image:url(emoji/emoji_15.png)}
+.emoji_16 {background-image:url(emoji/emoji_16.png)}
+.emoji_17 {background-image:url(emoji/emoji_17.png)}
+.emoji_18 {background-image:url(emoji/emoji_18.png)}
+.emoji_19 {background-image:url(emoji/emoji_19.png)}
+.emoji_20 {background-image:url(emoji/emoji_20.png)}
+.emoji_21 {background-image:url(emoji/emoji_21.png)}
+.emoji_22 {background-image:url(emoji/emoji_22.png)}
+.emoji_23 {background-image:url(emoji/emoji_23.png)}
+.emoji_24 {background-image:url(emoji/emoji_24.png)}
+.emoji_25 {background-image:url(emoji/emoji_25.png)}
+.emoji_26 {background-image:url(emoji/emoji_26.png)}
+.emoji_27 {background-image:url(emoji/emoji_27.png)}
+.emoji_28 {background-image:url(emoji/emoji_28.png)}
+.emoji_29 {background-image:url(emoji/emoji_29.png)}
+.emoji_30 {background-image:url(emoji/emoji_30.png)}
+.emoji_31 {background-image:url(emoji/emoji_31.png)}
+.emoji_32 {background-image:url(emoji/emoji_32.png)}
+.emoji_33 {background-image:url(emoji/emoji_33.png)}
+.emoji_34 {background-image:url(emoji/emoji_34.png)}
+.emoji_35 {background-image:url(emoji/emoji_35.png)}
+.emoji_36 {background-image:url(emoji/emoji_36.png)}
+.emoji_37 {background-image:url(emoji/emoji_37.png)}
+.emoji_38 {background-image:url(emoji/emoji_38.png)}
+.emoji_39 {background-image:url(emoji/emoji_39.png)}
+.emoji_40 {background-image:url(emoji/emoji_40.png)}
+.emoji_41 {background-image:url(emoji/emoji_41.png)}
+.emoji_42 {background-image:url(emoji/emoji_42.png)}
+.emoji_43 {background-image:url(emoji/emoji_43.png)}
+.emoji_44 {background-image:url(emoji/emoji_44.png)}
+.emoji_45 {background-image:url(emoji/emoji_45.png)}
+.emoji_46 {background-image:url(emoji/emoji_46.png)}
+.emoji_47 {background-image:url(emoji/emoji_47.png)}
+.emoji_48 {background-image:url(emoji/emoji_48.png)}
+.emoji_49 {background-image:url(emoji/emoji_49.png)}
+.emoji_50 {background-image:url(emoji/emoji_50.png)}
+.emoji_51 {background-image:url(emoji/emoji_51.png)}
+.emoji_52 {background-image:url(emoji/emoji_52.png)}
+.emoji_53 {background-image:url(emoji/emoji_53.png)}
+.emoji_54 {background-image:url(emoji/emoji_54.png)}
+.emoji_55 {background-image:url(emoji/emoji_55.png)}
+.emoji_56 {background-image:url(emoji/emoji_56.png)}
+.emoji_57 {background-image:url(emoji/emoji_57.png)}
+.emoji_58 {background-image:url(emoji/emoji_58.png)}
+.emoji_59 {background-image:url(emoji/emoji_59.png)}
+.emoji_60 {background-image:url(emoji/emoji_60.png)}
+.emoji_61 {background-image:url(emoji/emoji_61.png)}
+.emoji_62 {background-image:url(emoji/emoji_62.png)}
+.emoji_63 {background-image:url(emoji/emoji_63.png)}
+.emoji_64 {background-image:url(emoji/emoji_64.png)}
+.emoji_65 {background-image:url(emoji/emoji_65.png)}
+.emoji_66 {background-image:url(emoji/emoji_66.png)}
+.emoji_67 {background-image:url(emoji/emoji_67.png)}
+.emoji_68 {background-image:url(emoji/emoji_68.png)}
+.emoji_69 {background-image:url(emoji/emoji_69.png)}
+.emoji_70 {background-image:url(emoji/emoji_70.png)}
+.emoji_71 {background-image:url(emoji/emoji_71.png)}
+.emoji_72 {background-image:url(emoji/emoji_72.png)}
+.emoji_73 {background-image:url(emoji/emoji_73.png)}
+.emoji_74 {background-image:url(emoji/emoji_74.png)}
+.emoji_75 {background-image:url(emoji/emoji_75.png)}
+.emoji_76 {background-image:url(emoji/emoji_76.png)}
+.emoji_77 {background-image:url(emoji/emoji_77.png)}
+.emoji_78 {background-image:url(emoji/emoji_78.png)}
+.emoji_79 {background-image:url(emoji/emoji_79.png)}
+.emoji_80 {background-image:url(emoji/emoji_80.png)}
+.emoji_81 {background-image:url(emoji/emoji_81.png)}
+.emoji_82 {background-image:url(emoji/emoji_82.png)}
+.emoji_83 {background-image:url(emoji/emoji_83.png)}
+.emoji_84 {background-image:url(emoji/emoji_84.png)}
+.emoji_85 {background-image:url(emoji/emoji_85.png)}
+.emoji_86 {background-image:url(emoji/emoji_86.png)}
+.emoji_87 {background-image:url(emoji/emoji_87.png)}
+.emoji_88 {background-image:url(emoji/emoji_88.png)}
+.emoji_89 {background-image:url(emoji/emoji_89.png)}
+.emoji_90 {background-image:url(emoji/emoji_90.png)}
+.emoji_91 {background-image:url(emoji/emoji_91.png)}
+.emoji_92 {background-image:url(emoji/emoji_92.png)}
+.emoji_93 {background-image:url(emoji/emoji_93.png)}
+.emoji_94 {background-image:url(emoji/emoji_94.png)}
+.emoji_95 {background-image:url(emoji/emoji_95.png)}
+.emoji_96 {background-image:url(emoji/emoji_96.png)}
+.emoji_97 {background-image:url(emoji/emoji_97.png)}
+.emoji_98 {background-image:url(emoji/emoji_98.png)}
+.emoji_99 {background-image:url(emoji/emoji_99.png)}
+.emoji_100 {background-image:url(emoji/emoji_100.png)}
+.emoji_101 {background-image:url(emoji/emoji_101.png)}
+.emoji_102 {background-image:url(emoji/emoji_102.png)}
+.emoji_103 {background-image:url(emoji/emoji_103.png)}
+.emoji_104 {background-image:url(emoji/emoji_104.png)}

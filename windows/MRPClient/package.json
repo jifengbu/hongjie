@@ -1,0 +1,20 @@
+{
+	"verCode": 10000,
+	"main":"www/index.html",
+	"name":"MRPClient",
+	"description": "MRPClient for windows",
+	"keywords": [ "MRPClient", "hongjie-soft" ],
+	"window": {
+		"title": "MRP客户端",
+		"width": 550,
+		"height": 990,
+		"always-on-top":false,
+		"show_in_taskbar":true,
+		"transparent": false,
+		"resizable": true,
+		"frame": true,
+		"icon": "logo.png",
+		"toolbar": true,
+		"show": true
+	}
+}

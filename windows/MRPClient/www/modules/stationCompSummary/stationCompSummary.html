@@ -1,0 +1,11 @@
+<header>
+    <h1>工号完工统计</h1>
+    <a class='backButton button' onclick="app.stationCompSummary.release()">返回</a>
+    <a class='button icon message chatbutton' onclick="app.changeToChatPage(app.stationCompSummary.id)"></a>
+    <span  style="float:right" >
+        <a class="button icon info" style="padding-right: 0px;" onclick="app.stationCompSummary.showHelp()"></a>
+        <a class="button icon magnifier" style="padding-left: 0px;" onclick="app.stationCompSummary.showFilterSearch()">查询</a>
+    </span>
+</header>
+<ul class='list' id='station_info_list'>
+</ul>

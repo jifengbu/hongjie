@@ -1,0 +1,43 @@
+<header>
+	<h1>ticket发布</h1>
+	<a class='backButton button'>返回</a>
+	<a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.ticketIssue.id, 1)"></a>
+</header>
+<br>
+<div>
+	<label for="ti_title" style="width: 25%;">栏目:</label>
+	<select id="ti_purpose" style="width: 74%;" class="input_style">
+	</select>
+	<label for="ti_title" style="width: 25%;">主题:</label><input id="ti_title" type="text" placeholder="title" style="width: 74%;" class="input_style" >
+	<label for="ti_content" style="width: 25%;">内容:</label>
+	<textarea id="ti_content" rows="2" placeholder="content" style="width: 74%;" class="input_style" ></textarea>
+	<label style="width: 99%;">
+	<a href="#" class="button" style="width:40%;float:right" onclick="app.ticketIssue.getWorkLog()">获取生产记录</a>
+	</label>
+	<label style="width: 35%;">附件:&nbsp;&nbsp;&nbsp;&nbsp;<a class="icon add" onclick='app.ticketIssue.addAttachments()'></a></label>
+	<ul class='list inset' id='ti_files_list' style="width:64%;float:right;margin:0px;display: none">
+	</ul>
+	<table  width="100%" style="color: inherit;"><tr><td><div>
+	<label for="ti_emergency_level" style="width: 25%;">紧急程度:</label>
+	<select id="ti_emergency_level" style="width: 74%;" class="input_style" >
+		<option value="1">1级</option>
+		<option value="2">2级</option>
+		<option value="3">3级</option>
+		<option value="4">4级</option>
+		<option value="5">5级</option>
+	</select>
+	</div></td></tr></table>
+	<label for="ti_visible_group" style="width: 25%;">可见组:</label>
+	<textarea id="ti_visible_group" rows="2" placeholder="Group" readonly="readonly" style="width: 62%;" class="input_style">admin</textarea><label for="ti_visible_group" style="width: 12%;float:right;"><a class="button icon add" style="float:right;border:0" onclick='app.ticketIssue.showVisibleGroup()'></a></label>
+	
+	<label for="ti_visible_person" style="width: 25%;">可见用户:</label>
+	<textarea id="ti_visible_person" rows="2" placeholder="User" readonly="readonly" style="width: 62%;" class="input_style" ></textarea><label for="ti_visible_person" style="width: 12%;float:right;"><a class="button icon add" style="float:right;border:0" onclick='app.ticketIssue.showVisiblePerson()'></a></label>
+	<table  width="100%" style="color: inherit;"><tr><td><div>
+	<label for="ti_track_type" style="width: 25%;">追踪类型:</label>
+	<select id="ti_track_type" style="width: 74%;" class="input_style">
+	</select>
+    </div></td></tr></table>
+	<label for="ti_track_other_id" style="width: 25%;">追踪明细:</label>
+	<textarea id="ti_track_other_id" rows="2" placeholder="track detail" style="width: 74%;" class="input_style" ></textarea>
+</div>
+<a href="#" class="button green" style="width:99%"onclick="app.ticketIssue.issueTicket()">发布</a>

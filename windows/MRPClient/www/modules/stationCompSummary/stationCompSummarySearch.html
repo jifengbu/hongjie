@@ -1,0 +1,51 @@
+<header>
+    <h1>查询条件</h1>
+    <a class='backButton button' >返回</a>
+    <a class='button icon message rightchatbutton' onclick="app.changeToChatPage(app.stationCompSummarySearch.id, 1)"></a>
+</header>
+<br>
+<div>
+    <table  width="100%" style="color: inherit;">
+        <tr><td>
+            <div style="background-color:#D3D3D3; margin-bottom: 6px;text-align: center;">时间段</div>
+        </td></tr>
+        <tr><td>
+            <label for="scss_time_start" style="width: 32%;">开始时间:</label>
+            <select id="scss_time_start" style="width: 60%;">
+                <option value="day" selected>当天</option>
+                <option value="week">当周周一</option>
+                <option value="month" >当月月初</option>
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="scss_time_value" style="width: 32%;">日期:</label>
+            <input id="scss_time_value" type="text" style="width: 60%; " value="" onclick="app.stationCompSummarySearch.showPopMenu()" readonly>
+        </td></tr>
+        <tr><td>
+            <br>
+            <div style="background-color:#D3D3D3; margin-bottom: 6px;text-align: center;">其他选项</div>
+        </td></tr>
+        <tr><td>
+            <label for="scss_person" style="width: 32%;">查看人员:</label>
+            <input id="scss_person" type="text" style="width: 40%; " value="" onclick="app.stationCompSummarySearch.selectPerson()" readonly>&nbsp;&nbsp;<span class="icon remove" style="font-size: 1.5em" onclick="app.stationCompSummarySearch.removePerson();"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon user" style="font-size: 1.5em" onclick="app.stationCompSummarySearch.resetPerson();"></span>
+            <br>
+            <label for="scss_stage" style="width: 32%;">工序查询:</label>
+            <select id="scss_stage" style="width: 60%;">
+            </select>
+        </td></tr>
+        <tr id="tr_scss_type"><td>
+            <label for="scss_type" style="width: 32%;">统计选项:</label>
+            <select id="scss_type" style="width: 60%;">
+                <option value="" selected></option>
+                <option value="layer">层数</option>
+                <option value="material">材料</option>
+                <option value="finished">处理工艺</option>
+            </select>
+        </td></tr>
+        <tr><td>
+            <label for="scss_witem_name" style="width: 32%;">加工对象号:</label>
+            <input id="scss_witem_name" type="text" style="width: 60%;">
+        </td></tr>
+    </table>
+    <a href="#" class="round_button" style="width:99%" onclick="app.stationCompSummarySearch.doFilterSearch()">查询</a>
+</div>

@@ -1,0 +1,20 @@
+<header>
+	<h1>设置</h1>
+	<a class='backButton button'>返回</a>
+	<a class="button icon check" style="float:right" onclick="app.setting.doMoreSettingDone()">确定</a>
+</header>
+<br>
+<br>
+<br>
+<div>
+    <table  width="100%" style="color: inherit;"><tr><td>
+	<label for="ms_timeout" style="width: 40%;">网络超时:</label><input id="ms_timeout" type="text" placeholder="300000" style="width: 30%;">ms
+    </td></tr><tr><td>
+	<input id="ms_auto_login" type="checkbox">
+	<label for="ms_auto_login" class="">自动登录</label>
+    </td></tr><tr><td>
+    <input id="ms_auto_check_update" type="checkbox">
+	<label for="ms_auto_check_update" class="">自动检查更新</label>
+    </td></tr></table>
+</div>
+<div id="ms_extend_setting"></div>

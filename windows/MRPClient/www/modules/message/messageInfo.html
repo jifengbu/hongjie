@@ -1,0 +1,15 @@
+<header>
+	<h1 id="mi_title">和xx聊天中</h1>
+	<a class='backButton button' onclick="app.messageInfo.release()">返回</a>
+</header>
+<table id='msg_log_list' width="100%">
+</table>
+<footer>
+    <div id="send_message_control" style="background-color:#ffffff;width:100%;height:100%">
+        <a href="#" class="button" id="mi_more_button" onclick="app.messageInfo.toggleMoreSelect()">+</a>
+        <textarea id="message_input_textarea" rows="1"  class="message_input" style="display: none;min-height: inherit;max-height: inherit"></textarea>
+        <div id="message_input_div" class="message_input" contenteditable="true" style="display: none"></div>
+        <a href="#" class="button" id="mi_send_button" onclick="app.messageInfo.sendSimpleMessage()">&gt;</a>
+        <div id="mi_more_panel" class="sgridmenu" style="display: none"></div>
+    </div>
+</footer>
